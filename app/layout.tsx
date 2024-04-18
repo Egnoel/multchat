@@ -25,7 +25,7 @@ export default function RootLayout({
           </div>
           <div className="w-[85%] h-full min-h-screen">
             <NavBar />
-            <div className="absolute">
+            <div className="absolute w-[75%]">
             {children}
             </div>
           </div>
