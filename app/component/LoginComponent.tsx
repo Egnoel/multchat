@@ -55,7 +55,7 @@ const LoginComponent: React.FC = () => {
           {errors.password && touched.password && <p className="text-red-500 text-xs mt-1">{errors.password}</p>}
 
           <Link href={""} className='flex items-end justify-end py-4 mt-2 text-[#186CC3]'>Recuperar senha</Link>
-          <button disabled={isSubmitting} type="submit" className={`w-full py-2 mt-4 bg-[#186CC3] h-12 text-white font-bold rounded ${isSubmitting ? "opacity-50 cursor-not-allowed" : ""}`}>
+          <button disabled={isSubmitting} type="submit" className={`w-full py-2 mt-2 bg-[#186CC3] h-12 text-white font-bold rounded ${isSubmitting ? "opacity-50 cursor-not-allowed" : ""}`}>
             Entrar
           </button>
         </form>

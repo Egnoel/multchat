@@ -1,8 +1,8 @@
 
 import Image from "next/image";
-import FilterComponent from "./component/FilterComponent";
-import Dashboard from "./component/Dashboard";
-import TableComponent from "./component/TableComponent";
+import FilterComponent from "../component/FilterComponent";
+import Dashboard from "../component/Dashboard";
+import TableComponent from "../component/TableComponent";
 
 export default function Home() {
   return (

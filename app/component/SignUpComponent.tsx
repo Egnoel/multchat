@@ -33,7 +33,7 @@ const SignUpComponent: React.FC = () => {
       {({ handleSubmit, handleBlur, handleChange, values, errors, touched, isSubmitting }) => (
         <form onSubmit={handleSubmit} autoComplete="off" className="w-full max-w-md mx-auto flex flex-col gap-4">
           <div>
-            <label htmlFor="nome" className="block text-left">Qual é o seu nome</label>
+            <label htmlFor="nome" className="block text-left text-sm">Qual é o seu nome</label>
             <input
                 value={values.nome}
                 onChange={handleChange}
@@ -42,12 +42,12 @@ const SignUpComponent: React.FC = () => {
                 placeholder="Seu Nome"
                 onBlur={handleBlur}
                 autoComplete="off"
-                className={`w-full px-3 py-2  border-2  rounded ${errors.nome && touched.nome ? "border-red-500" : ""}`}
+                className={`w-full px-3 py-1  border-2  rounded ${errors.nome && touched.nome ? "border-red-500" : ""}`}
             />
             {errors.nome && touched.nome && <p className="text-red-500 text-xs mt-1">{errors.nome}</p>}
           </div>
           <div>
-            <label htmlFor="telefone" className="block text-left">Seu número de Whatsapp</label>
+            <label htmlFor="telefone" className="block text-left text-sm">Seu número de Whatsapp</label>
             <input
                 value={values.telefone}
                 onChange={handleChange}
@@ -56,7 +56,7 @@ const SignUpComponent: React.FC = () => {
                 placeholder="Telefone com (DDD)"
                 onBlur={handleBlur}
                 autoComplete="off"
-                className={`w-full px-3 py-2  border-2  rounded ${errors.telefone && touched.telefone ? "border-red-500" : ""}`}
+                className={`w-full px-3 py-1  border-2  rounded ${errors.telefone && touched.telefone ? "border-red-500" : ""}`}
             />
             {errors.telefone && touched.telefone && <p className="text-red-500 text-xs mt-1">{errors.telefone}</p>}
           </div>
@@ -64,7 +64,7 @@ const SignUpComponent: React.FC = () => {
             <span className=' mb-2'>Seus dados de acesso</span>
             <div className='flex flex-row gap-2'>
                 <div className='flex flex-col'>
-                    <label htmlFor="email" className="block text-left ">E-mail</label>
+                    <label htmlFor="email" className="block text-left text-sm">E-mail</label>
                     <input
                         value={values.email}
                         onChange={handleChange}
@@ -73,12 +73,12 @@ const SignUpComponent: React.FC = () => {
                         placeholder="nome@dominio.com"
                         onBlur={handleBlur}
                         autoComplete="off"
-                        className={`w-full px-3 py-2  border-2  rounded ${errors.email && touched.email ? "border-red-500" : ""}`}
+                        className={`w-full px-3 py-1  border-2  rounded ${errors.email && touched.email ? "border-red-500" : ""}`}
                     />
                     {errors.email && touched.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
                 </div>
                 <div className='flex flex-col'>
-                    <label htmlFor="password" className="block text-left">Senha</label>
+                    <label htmlFor="password" className="block text-left text-sm">Senha</label>
                     <input
                         id="password"
                         type="password"
@@ -87,21 +87,21 @@ const SignUpComponent: React.FC = () => {
                         onChange={handleChange}
                         onBlur={handleBlur}
                         autoComplete="new-password"
-                        className={`w-full px-3 py-2  border-2  rounded ${errors.password && touched.password ? "border-red-500" : ""}`}
+                        className={`w-full px-3 py-1  border-2  rounded ${errors.password && touched.password ? "border-red-500" : ""}`}
                     />
                     {errors.password && touched.password && <p className="text-red-500 text-xs mt-1">{errors.password}</p>}
                 </div>
             </div>
           </div>
          <div>
-            <label htmlFor="plano" className="block text-left">Plano</label>
+            <label htmlFor="plano" className="block text-left text-sm">Plano</label>
             <select
                 value={values.plano}
                 onChange={handleChange}
                 id="plano"
                 onBlur={handleBlur}
                 autoComplete="off"
-                className={`w-full px-3 py-2  border-2  rounded ${errors.plano && touched.plano ? "border-red-500" : ""}`}
+                className={`w-full px-3 py-1  border-2  rounded ${errors.plano && touched.plano ? "border-red-500" : ""}`}
             >
                 <option value="">Selecione</option>
                 <option value="basico">Básico</option>

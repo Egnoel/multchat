@@ -10,12 +10,12 @@ export default function RootLayout({
       <html lang="en">
         <body>
         <div className='flex flex-row w-full h-screen relative'>
-         <div className='bg-white z-10 w-[47%] absolute h-[85%] left-0 top-[5%] flex items-center justify-center'>
-         {children}
-            </div>
-        <div className='w-[45%] bg-[#F1F1F1] h-full flex flex-col justify-end items-center py-4'>
-            <footer className='font-normal text-xs'>
-                <p>
+          <div className='bg-white z-10 w-[47%] absolute h-[85%] left-0 top-[5%] flex  justify-center'>
+            {children}
+          </div>
+        <div className='w-[45%] bg-[#F1F1F1] h-full flex flex-col justify-end items-center py-4 '>
+            <footer style={{fontSize:'10px'}}>
+                <p >
                     Direitos autorais © {" "}
                     <span>Equipechat</span>{" "}
                     2024
@@ -28,7 +28,7 @@ export default function RootLayout({
                 <span>Entre em contacto pelo nosso Zap</span>
                 <span>e <span className="text-[#186CC3]">solicite um orçamento.</span></span>
             </div>
-            <Image src={capa} alt="capa" width={800} height={800} className=" ml-16" />
+            <Image src={capa} alt="capa" width={600} height={600} className=" ml-12" />
         </div>
     </div>
         </body>
