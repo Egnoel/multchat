@@ -10,7 +10,7 @@ import { MdOutlineCalendarMonth } from "react-icons/md";
 
 const SideBar = () => {
   return (
-    <div className='flex flex-col w-full h-full pl-4 py-6 gap-5'>
+    <div className='flex flex-col w-full h-full pl-4 py-6 gap-5 '>
         <div className='flex flex-col items-center gap-2'>
             <Image src={logo} alt='logo' width={120} height={120} className='w-auto h-auto' />
         </div>

@@ -6,7 +6,7 @@ import TableComponent from "./component/TableComponent";
 
 export default function Home() {
   return (
-    <div className="top-[-24px] flex flex-col gap-4 relative ml-20 w-full items-center">
+    <div className="top-[-24px] flex flex-col gap-4 relative ml-20 w-full items-center ">
       <Dashboard />
       <FilterComponent />
       <TableComponent />
