@@ -1,5 +1,6 @@
 import Image from "next/image";
 import capa from "../assets/image1.png";
+import "../globals.css";
 
 export default function RootLayout({
     children,
