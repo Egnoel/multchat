@@ -1,6 +1,7 @@
 import Image from "next/image";
 import capa from "../assets/image1.png";
 import "../globals.css";
+import './style.css'
 
 export default function RootLayout({
     children,
@@ -15,7 +16,7 @@ export default function RootLayout({
             {children}
           </div>
         <div className='w-[45%] bg-[#F1F1F1] h-full flex flex-col justify-end items-center py-4 '>
-            <footer style={{fontSize:'10px'}}>
+            <footer>
                 <p >
                     Direitos autorais © {" "}
                     <span>Equipechat</span>{" "}
