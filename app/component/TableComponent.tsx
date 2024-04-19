@@ -82,7 +82,7 @@ const TableComponent = () => {
     },
 ]
   return (
-    <div className=" w-full">
+    <div className="max-h-[calc(100vh-72px)]  w-full">
         <DataTable columns={Columns} data={data} />
     </div>
   )

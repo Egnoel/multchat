@@ -18,14 +18,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <div className="flex  flex-row w-full h-full min-h-screen bg-[#F2F2F2]">
-          <div className="w-[15%] h-full min-h-screen bg-[#F8F9FA]">
+      <body className="w-full h-full bg-[#F2F2F2]">
+        <div className="flex  flex-row w-full h-[100%] min-h-full max-h-full bg-[#F2F2F2]">
+          <div className="w-[15%] h-[100%] min-h-full max-h-full bg-[#F8F9FA]">
             <SideBar />
           </div>
-          <div className="w-[85%] h-full min-h-screen">
+          <div className="w-[85%] h-full min-h-full max-h-full bg-[#F2F2F2]">
             <NavBar />
-            <div className="absolute w-[75%]">
+            <div className="absolute w-[75%] h-full min-h-full">
             {children}
             </div>
           </div>
