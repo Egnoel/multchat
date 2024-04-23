@@ -25,7 +25,7 @@ export default function RootLayout({
           </div>
           <div className="w-[85%] h-full min-h-full max-h-full bg-[#F2F2F2]">
             <NavBar />
-            <div className="absolute w-[75%] h-full min-h-full">
+            <div className="absolute w-[85%] h-full min-h-full flex justify-center">
             {children}
             </div>
           </div>
