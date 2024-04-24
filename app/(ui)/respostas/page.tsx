@@ -1,4 +1,5 @@
 import AddAnswer from '@/app/component/AddAnswer'
+import Answers from '@/app/component/Answers'
 import { Separator } from '@/components/ui/separator'
 import React from 'react'
 
@@ -9,7 +10,9 @@ const page = () => {
           <AddAnswer />
         </div>
         <Separator orientation='vertical' className='bg-[#ECECEC] h-full' />
-        <div className='w-1/2'>2</div>
+        <div className='w-1/2'>
+          <Answers />
+        </div>
     </div>
   )
 }
