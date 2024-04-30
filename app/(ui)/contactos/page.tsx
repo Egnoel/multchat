@@ -14,6 +14,14 @@ import { SlNote } from "react-icons/sl";
 import { FaRegTrashCan } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
 
 const page = () => {
   return (
@@ -27,7 +35,17 @@ const page = () => {
             </div>
             <Button className='text-center border border-[#186CC3] text-[#186CC3] px-4 rounded h-7' >Importar Contactos</Button>
             <Button className='text-center border border-[#186CC3] text-[#186CC3] px-4 rounded h-7' >Exportar Contactos</Button>
-            <Button className='text-center border border-[#186CC3] text-white bg-[#186CC3] px-4 rounded h-7'>Adicionar Contacto</Button>
+            <Dialog>
+              <DialogTrigger>
+                <span className='text-center border border-[#186CC3] text-white bg-[#186CC3] px-4 rounded h-7 py-1'>Adicionar Contacto</span>
+              </DialogTrigger>
+              <DialogContent className='bg-[#F3F3F3] w-full'>
+                <DialogHeader className='bg-[#F3F3F3]'>
+                  <DialogTitle className='text-black '>Adicionar Contacto</DialogTitle>
+                </DialogHeader>
+                <div className='bg-white w-full'>Content</div>
+              </DialogContent>
+            </Dialog>
           </div>
         </div>
         <div className='w-full'>
