@@ -11,7 +11,6 @@ import {
     scales,
   } from 'chart.js';
   import { Bar } from 'react-chartjs-2';
-  import { faker } from '@faker-js/faker';
 import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
 
