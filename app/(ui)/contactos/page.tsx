@@ -22,6 +22,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
+import AddContact from '@/app/component/AddContact';
 
 const page = () => {
   return (
@@ -43,7 +44,7 @@ const page = () => {
                 <DialogHeader className='bg-[#F3F3F3]'>
                   <DialogTitle className='text-black '>Adicionar Contacto</DialogTitle>
                 </DialogHeader>
-                <div className='bg-white w-full'>Content</div>
+                <AddContact />
               </DialogContent>
             </Dialog>
           </div>
